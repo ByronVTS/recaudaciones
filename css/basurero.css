@@ -1,0 +1,228 @@
+
+/* fecha-inicio-fin */
+
+.fecha-inicio-fin__campo{
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .fecha-inicio-fin__label{
+    flex: 1;
+    padding-right: 2rem;
+    text-align: right;
+  }
+  .fecha-inicio-fin__input{
+    flex: 1;
+    border: 1px solid var(--gris);
+    margin-right: 3rem;
+  }
+  @media (min-width:768px ) {
+    .fecha-inicio-fin{
+      padding: 1.5rem;
+      /* border: 1px solid red; */
+    }
+  }
+  /* .caja-chica-fin-inicio */
+  .caja-chica-fin-inicio__campo{
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .caja-chica-fin-inicio__label{
+    flex: 1;
+    padding-right: 2rem;
+    text-align: right;
+  }
+  .caja-chica-fin-inicio__input{
+    flex: 1;
+    border: 1px solid var(--gris);
+    margin-right: 3rem;
+  }
+  @media (min-width: 768px) {
+    .caja-chica-fin-inicio{
+      padding: 1.5rem;
+    }
+  }
+  /* datos-entrega*/
+  .datos-entrega__campo{
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .datos-entrega__label{
+    flex: 1;
+    padding-right: 2rem;
+    text-align: right;
+  }
+  .datos-entrega__input,
+  .datos-entrega__select{
+    flex: 1;
+    border: 1px solid var(--gris);
+    margin-right: 3rem;
+  }
+  @media (min-width: 768px) {
+      .datos-entrega{
+        padding: 1.5rem;
+      }
+      
+  }
+  /* recaudado-wisphub */
+  .recaudado-wisphub__label,
+  .recaudado-wisphub__input{
+  display: block;  
+  padding-left: 15rem ;
+  margin-bottom: 2rem;
+  border: 1px solid green;
+  }
+  @media (min-width: 768px) {
+      .recaudado-wisphub{
+        padding: 1.5rem;
+        display: flex;
+      }
+  }
+  /* valor-entrega */
+  /* .valor-entrega__label,
+  .valor-entrega__input{
+    display: block;
+    padding-left: 15rem ;
+    margin-bottom: 2rem;
+    border: 1px solid var(--gris);
+  }
+  @media (min-width: 768px) {
+      .valor-entrega{
+        padding: 1.5rem ;
+        display: flex;
+      }
+  }  */
+  /* EGRESOS */
+  /* .egresos__campo p{
+    width: 100%;
+  } */
+  /* .egresos__descripcion{
+    padding-left: 3rem;
+  } */
+  /* .egresos__input{
+  } */
+  @media (min-width: 768PX) {
+      .egresos__campo{
+        display: flex;
+        border: 1px solid var(--negro);
+        /* padding: 1rem; */
+      }
+  }
+  /* MONEDAS */
+  @media (min-width: 768PX) {
+      .monedas__columna{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+  }
+  /*BILLETES */
+  @media (min-width: 768PX) {
+      .billetes__columna{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+
+
+
+  /*------------------------ basureros 2.o-------------------------- */
+  .fecha-inicio-fin,
+.caja-chica,
+.datos-entrega,
+.recaudado-wisphub,
+.valor-entrega,
+.egresos,
+.monedas,
+.billetes{
+  margin: 1rem;
+}
+
+/* fecha-inicio-fin  */
+.fecha-inicio-fin__campo {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+   padding: 0.5rem;
+}
+.fecha-inicio-fin__label {
+  text-align: right;
+  margin-right: 1rem;
+  width: 10rem;
+}
+
+.fecha-inicio-fin__input {
+    text-align: left;
+    border: 1px solid var(--negro);
+    width: 15rem;
+    text-align: center;
+}
+/* caja chica */
+.caja-chica__campo{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0.5rem;
+
+}
+.caja-chica__label{
+  text-align: right;
+  margin-right: 1rem;
+  width: 10rem;
+}
+.caja-chica__input{
+  text-align: left;
+  border: 1px solid var(--negro);
+  width: 15rem;
+  text-align: center;
+}
+/* DATOS ENTREGA */
+.datos-entrega__campo{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+     padding: 0.5rem;
+}
+.datos-entrega__label{
+  text-align: right;
+  margin-right: 1rem;
+  width: 10rem;
+}
+.datos-entrega__input,
+.datos-entrega__select{
+  text-align: left;
+  border: 1px solid var(--negro);
+  width: 15rem;
+  text-align: center;
+}
+/* RECAUDADO WISPHUB */
+.recaudado-wisphub__campo{
+  display: flex;
+  flex-direction: column;
+}
+.recaudado-wisphub__input{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  border: 1px solid var(--negro);
+  padding: 0.5rem;
+}
+/* VALOR ENTREGA */
+.valor-entrega__campo{ 
+  display: flex;
+  flex-direction: column;
+}
+.valor-entrega__input{
+  border: 1px solid var(--negro);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 0.5rem;
+}
+/* tablas */
+
+
+.monedas input,
+.billetes input,
+.egresos input{
+  width: 10rem;
+  text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/historial.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+  <header class="header">
+    <div class="contenedor-barra">
+      <div class="logo">
+        <a href="./index.html">
+          <h1 class="logo__h1">SURNET<span> Recaudaciones</span></h1>
+        </a>
+      </div>
+        <div class="nav-bar">
+            <nav>
+              <a href="./index.html">Cierre de caja</a>
+              <a href="./consulta.html">Consultas</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+        <!-- <div class="Consulta">
+            <label class="consulta__label">Ingreso el numero de Id</label>
+            <input type="text" name="" id="consulta__input">
+            <button class="consulta__btn">Consultar</button>
+            <pre class="consulta__respuesta"></pre>
+        </div> -->
+        <main class="contenedor">
+          <h3>Historial</h3>
+          <div >  
+            <table>
+              <tr>
+                <th>Fecha</th>
+                <th>Cajero</th>
+                <th>Valor entregado</th>
+                <th>Valor WISPHUB</th>
+                <th>Total egresos</th>
+                <th>Total billetes</th>
+                <th>Total monedas</th>
+                <th class="acciones">Acciones</th>
+              </tr>
+              <tr>
+                <td>27/02/2023</td>
+                <td>Todos los cajeres</td>
+                <td>$1.234,00 </td>
+                <td>$1.300,00</td>
+                <td>$200</td>
+                <td>$1.000,00</td>
+                <td>$234,00</td>
+                <td> <button>Borrar</button> <button>Editar</button><button>Imprimir</button></td>
+              </tr>
+              <tr>
+                <td>27/02/2023</td>
+                <td>Todos los cajeres</td>
+                <td>$1.234,00 </td>
+                <td>$1.300,00</td>
+                <td>$200</td>
+                <td>$1.000,00</td>
+                <td>$234,00</td>
+                <td> <button>Borrar</button> <button>Editar</button><button>Imprimir</button></td>
+              </tr>
+            </table>
+          </div>
+        </main>
+    <script src="./js/consulta.js"></script>
+    </body>
+</html>

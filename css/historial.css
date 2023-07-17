@@ -1,0 +1,81 @@
+:root {
+    --primario_oscuro: rgb(8, 8, 57);
+    --primario_claro: rgb(3, 96, 195);
+    --primario_masclaro: rgba(208, 227, 247, 0.514);
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+  }
+  html {
+    font-size: 65.5%;
+    text-align: center;
+    height: 100%;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  body {
+    font-size: 1.6rem;
+    line-height: 2;
+    height: 100%;
+    margin: 0;
+    position: relative;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /*----------GLOBALES----------  */
+  .contenedor {
+    width: min(95%, 190rem);
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 2.8rem;
+  }
+  img {
+    max-width: 100%;
+    background-size: cover;
+  }
+  
+table{
+    width: 100%;
+    background-color: rgba(10, 173, 195, 0.323);
+}
+tr{
+    list-style: none !important;
+}
+
+.acciones{
+    width: 20%;
+}
+table button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(239, 221, 18, 0.386);
+}   

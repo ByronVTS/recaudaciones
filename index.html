@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cobranzas</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+  </head>
+  <body>
+
+
+    <header class="header">
+      <div class="contenedor-barra">
+        <div class="logo">
+          <a href="./index.html">
+            <h1 class="logo__h1">SURNET<span> Recaudaciones</span></h1>
+          </a>
+        </div>
+          <div class="nav-bar">
+              <nav>
+                <a href="./index.html">Cierre de caja</a>
+                <a href="./consulta.html">Consultas</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Cierre de caja </h1>
+      <div class="contenedor">
+        <div class="contenedor-cobranzas">
+          <div class="cuadro">
+            <div class="campo">
+              <label class="label">Caja inicial</label>
+                <input class="input caja_inicial"  type="number" placeholder="valor inicial" id="">
+            </div>
+            <div class="campo">
+              <label class="label" for="">Caja final</label>
+              <input class="input caja_final" type="number" placeholder="valor final" id="">
+            </div>
+              <!-- <div class="campo">
+              <label class="label" for="">Desde</label>
+              <input class="input" type="date" name="" id="">
+            </div>
+              <div class="campo">
+                <label class="label" for="">Hasta</label>
+                <input class="input" type="date" name="" id="">
+              </div> -->
+              <!-- <div class="campo">
+                <label class="label">Zona</label>
+                <select class="input" name="" id="">
+                  <option value="">----------</option>
+                  <option value="">Todos las zonas</option>
+                  <option value="">San juan</option>
+                  <option value="">Condado</option>
+                  <option value="">Llano Grande</option>
+                  <option value="">Moran</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label class="label">Formas de pago</label>
+                <select class="input" name="" id="">
+                  <option value="">----------</option>
+                  <option value="">Todos las formas de pago</option>
+                  <option value="">Banco pichincha 160</option>
+                  <option value="">Banco pichincha 168</option>
+                  <option value="">Efectivo</option>
+                  <option value="">Banco del pacifico</option>
+                  <option value="">Otros</option>
+                </select>
+            </div> -->
+          </div>
+          <!-- <div class="cuadro">
+            <div class="campo">
+              <label class="label">Estado Fiscal</label>
+              <select class="input" name="" id="">
+                <option value="">----------</option>
+                <option value="">Todas</option>
+                <option value="">No facturadas</option>
+                <option value="">Facturadas</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label class="label">Tipo de fecha</label>
+              <select class="input" name="" id="">
+                <option value="">----------</option>
+                <option value="">Fecha de emision</option>
+                <option value="">Fecha de pago</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label class="label">Estado</label>
+              <select class="input" name="" id="">
+                <option value="">----------</option>
+                <option value="">Todos los estados</option>
+                <option value="">Pendiente de pago</option>
+                <option value="">Pagado</option>
+                <option value="">Cancelado</option>
+                <option value="">Se transfirio</option>
+                <option value="">Pago parcial</option>
+              </select>
+            </div>
+
+          </div> -->
+          <div class="cuadro">
+            <div class="campo">
+              <label  class="label">Fecha de entrega</label>
+              <input class="input fecha-entrega" type="date">
+            </div>
+            <div class="campo">
+              <label class="label">Cajero</label>
+              <select class="input cajer@" name="cajero" id="cajero-selector">
+                <option value="">----------</option>
+                <option value="todos">Todos los cajer@s</option>
+                <option value="johana">Johana</option>
+                <option value="andrea">Andrea</option>
+                <option value="ana">Ana</option>
+                <option value="byron">Byron</option>
+              </select>
+            </div>
+
+
+            </div>
+          <div class="cuadro">
+            <div class="campo">
+              <label class="label">Valor recaudado por Wisphub </label>
+              <input class="input valor_recaudado_wisphub" type="number"  placeholder="Recaudado Wisphub" id="">
+            </div>
+            <div class="campo">
+              <label class="label">Valor a entregar</label>
+              	<input class="input valor_a_entregar" type="number" placeholder="valor a entregar" id="">
+            </div>
+          </div>
+          <div class="cuadro">
+            <div class="campo">
+              <label class="label">Valor a entregar Teorico</label>
+              	<input class="input valor_a_entregar_teorico" type="number" placeholder="Teorico" id="">
+            </div>
+            <div class="campo">
+              <label class="label">Diferencia</label>
+              	<input class="input diferencia" type="number" placeholder=" " id="">
+            </div>
+
+          </div>
+          <div class="egresos">
+            <h4>Egresos</h4>
+            <table class="egresos-table" id="egresos-table">
+              <tbody>
+              <tr>
+                <th>Decripcion</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                  <td class="egresos__textarea"><textarea oninput="adjustTextAreaSize(this)" ></textarea></td>
+                  <td class="egresos__td"><input class="egresos__valor no-spinner " type="number"></td>
+              </tr>
+              <tr>
+                  <td class="egresos__textarea"><textarea oninput="adjustTextAreaSize(this)" ></textarea></td>
+                  <td class="egresos__td"><input class="egresos__valor no-spinner " type="number"></td>
+              </tr>
+              <tr>
+                <td class="egresos__textarea"><textarea oninput="adjustTextAreaSize(this)" ></textarea></td>
+                <td class="egresos__td"><input class="egresos__valor no-spinner" type="number"></td>
+              </tr>
+              <tr>
+                <td>Total egresos</td>
+                <td class="egresos__td egresos_valor_total"></td>
+              </tr>
+            </tbody>
+            <tbody></tbody>
+          </table>
+
+          <button onclick="agregarFila()">Agregar fila</button>
+        </div>
+          <div class="monedas">
+            <h4>Monedas</h4>
+            <table class="monedas-table" id="monedas-table">
+              <tr>
+                  <th>Moneda</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+              </tr>
+              <tr>
+                  <td>0.01 ctvs</td>
+                  <td><input class=" no-spinner"  type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td >0.05 ctvs</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>0.10 ctvs</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>0.25 ctvs</td>
+                  <td><input class="no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>0.50 ctvs</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>1.00 ctvs</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                <td colspan="2">Total monedas</td>
+                <td class="monedas_valor_total"></td>
+            </tr>
+          </table>
+
+          </div>
+          <div class="billetes">
+            <h4>Billetes</h4>
+            <table class="billetes-table" id="billetes-table">
+              <tr>
+                  <th>Billete</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+              </tr>
+              <tr>
+                  <td>$1</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>$5</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>$10</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>$20</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>$50</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>$100</td>
+                  <td><input  class=" no-spinner" type="number" ></td>
+                  <td></td>
+              </tr>
+              <tr>
+                <td colspan="2">Total billetes</td>
+                <td class="billetes_valor_total"></td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        <button id="save-btn" class="save-btn">Guardar</button>     
+        <button id="calcular-btn" class="calcular-btn">Validar</button>
+
+      </div>
+    </main>
+      <footer>
+        <p>Todos los derechos reservados </p>
+      </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

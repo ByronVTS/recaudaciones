@@ -1,0 +1,280 @@
+:root {
+  --primario_oscuro: rgb(8, 8, 57);
+  --primario_claro: rgb(3, 96, 195);
+  --primario_masclaro: rgba(208, 227, 247, 0.514);
+  --gris: #e1e1e1;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+html {
+  font-size: 65.5%;
+  text-align: center;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*----------GLOBALES----------  */
+.contenedor {
+  width: min(95%, 190rem);
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+img {
+  max-width: 100%;
+  background-size: cover;
+}
+
+/* -------header--------- */
+
+@media (min-width: 768px) {
+    .contenedor-barra{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo a{
+      color: var(--blanco);
+  }
+  .logo__h1{
+    margin-left: 1rem;
+  }
+  .nav-bar {
+      margin-left: auto;
+  }
+  .nav-bar a{
+      color: var(--blanco);
+      padding-right: 2rem;
+      font-size: 2rem;
+  }
+  table{
+    border: 1px solid black;
+  }
+  .header{
+    background-color: var(--primario_oscuro);
+}
+}
+
+
+/* ------MAIN----------- */
+@media (min-width: 768px) {
+    .contenedor-cobranzas{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      border: 1px solid var(--gris);
+    }
+    .egresos{
+      grid-column: 1 / 3;
+    }
+    /* llenados de inputs y label */
+.campo{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+.input{
+  text-align: center;
+  padding: 0.3rem;
+  border: 1px solid var(--negro);
+  width: 70%;
+}
+/* ------DISEÑO DE TABLAS------ */
+table{
+  border: 1px solid var(--negro);
+  width: 95%;
+  border-collapse:collapse;
+}
+td,
+th{
+  border:1px solid var(--negro);
+}
+.monedas-table td,
+.billetes-table td{
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 0 ;
+}
+.egresos__valor,
+.monedas-table input,
+.billetes-table input{
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+}
+.egresos__td{
+  width: 15rem;
+}
+
+.egresos textarea{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 1rem 1rem 0 1rem;
+}
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* margin: 0; */
+}
+/* clase para que funcione en firefox */
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+}
+
+/* ----FOOTER---- */
+@media (min-width: 768px) {
+  footer{
+    margin-top: 30rem;
+    width: 100%;
+    bottom: 0;
+    color: var(--blanco);
+    background-color: var(--negro);
+    align-items: center;
+  }     
+  .save-btn,
+.calcular-btn{
+  background-color: #d5e7e3;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.save-btn{
+  margin-right: 3rem;
+}
+.calcular-btn{
+  margin-left: 3rem;
+}
+
+}
+
+
+/* ------HOJA DE IMPRESION------ */
+@media (max-width:767px ) {
+  .impresion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+  }   
+  .titulo-hoja{
+    margin-bottom: 5rem;
+  }
+      /* llenados de inputs y label */
+.campo{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+.label{
+  margin-top: -1rem;
+}
+.input{
+  text-align: center;
+  padding: 0.3rem;
+  border: 1px solid var(--negro);
+  width: 70%;
+}
+
+  .egresos{
+    margin-top: 2rem;
+  }
+  .cuadro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cuadro input,
+  .cuadro select{
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  footer{
+    margin-top: 3rem;
+  }
+  table{
+    border: 1px solid var(--negro);
+    width: 95%;
+    border-collapse:collapse;
+  }
+  td,
+  th{
+    border:1px solid var(--negro);
+  }
+  .monedas-table td,
+  .billetes-table td{
+    width: 10rem;
+    /* padding: 0.5rem 0 0.5rem 0 ; */
+  }
+  .egresos__valor,
+  .monedas-table input,
+  .billetes-table input{
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .egresos__td{
+    width: 15rem;
+  }
+  
+  .egresos textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    overflow-y: auto;
+    box-sizing: border-box;
+    /* padding: 1rem 1rem 0 1rem; */
+  }
+
+  /* ------FRIMAS---- */
+  .firma{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .firma input{
+    border-bottom: 1px solid black;
+    margin-top: 5rem;
+  }
+  .firma p{
+    margin-top: -1rem;
+  }
+}

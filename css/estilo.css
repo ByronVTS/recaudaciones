@@ -278,3 +278,9 @@ th{
     margin-top: -1rem;
   }
 }
+
+
+.darkmode{
+  background-color: rgb(32, 32, 44);
+  color: white;
+}

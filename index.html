@@ -10,8 +10,6 @@
     <link id="theme-style" rel="stylesheet" href="./css/dark-theme.css"> -->
   </head>
   <body >
-
-
     <header class="header">
       <div class="contenedor-barra">
         <div class="logo">
@@ -21,7 +19,13 @@
         </div>
           <div class="nav-bar">
               <nav>
-                <button  id="dark">Cambiar tema</button>
+                <select name="theme" id="theme">
+                  <option value="">Escoge el tema</option>
+                  <option value="">Original</option>
+                  <option value="verdeMora">Verde - Morado</option>
+                  <option value="gris">Grey</option>
+                  <option value="dark">Dark</option>
+                </select>
                 <a href="./index.html">Cierre de caja</a>
                 <a href="./consulta.html">Consultas</a>
             </nav>
@@ -42,70 +46,7 @@
               <label class="label" for="">Caja final</label>
               <input class="input caja_final" type="number" placeholder="valor final" id="">
             </div>
-              <!-- <div class="campo">
-              <label class="label" for="">Desde</label>
-              <input class="input" type="date" name="" id="">
-            </div>
-              <div class="campo">
-                <label class="label" for="">Hasta</label>
-                <input class="input" type="date" name="" id="">
-              </div> -->
-              <!-- <div class="campo">
-                <label class="label">Zona</label>
-                <select class="input" name="" id="">
-                  <option value="">----------</option>
-                  <option value="">Todos las zonas</option>
-                  <option value="">San juan</option>
-                  <option value="">Condado</option>
-                  <option value="">Llano Grande</option>
-                  <option value="">Moran</option>
-                </select>
-              </div>
-              <div class="campo">
-                <label class="label">Formas de pago</label>
-                <select class="input" name="" id="">
-                  <option value="">----------</option>
-                  <option value="">Todos las formas de pago</option>
-                  <option value="">Banco pichincha 160</option>
-                  <option value="">Banco pichincha 168</option>
-                  <option value="">Efectivo</option>
-                  <option value="">Banco del pacifico</option>
-                  <option value="">Otros</option>
-                </select>
-            </div> -->
           </div>
-          <!-- <div class="cuadro">
-            <div class="campo">
-              <label class="label">Estado Fiscal</label>
-              <select class="input" name="" id="">
-                <option value="">----------</option>
-                <option value="">Todas</option>
-                <option value="">No facturadas</option>
-                <option value="">Facturadas</option>
-              </select>
-            </div>
-            <div class="campo">
-              <label class="label">Tipo de fecha</label>
-              <select class="input" name="" id="">
-                <option value="">----------</option>
-                <option value="">Fecha de emision</option>
-                <option value="">Fecha de pago</option>
-              </select>
-            </div>
-            <div class="campo">
-              <label class="label">Estado</label>
-              <select class="input" name="" id="">
-                <option value="">----------</option>
-                <option value="">Todos los estados</option>
-                <option value="">Pendiente de pago</option>
-                <option value="">Pagado</option>
-                <option value="">Cancelado</option>
-                <option value="">Se transfirio</option>
-                <option value="">Pago parcial</option>
-              </select>
-            </div>
-
-          </div> -->
           <div class="cuadro">
             <div class="campo">
               <label  class="label">Fecha de entrega</label>
@@ -273,7 +214,7 @@
 
     </main>
       <footer>
-        <p>Todos los derechos reservados </p>
+        <p>"No me sigas, ¡estoy perdido también!"</p>
       </footer>
     <script src="./js/index.js"></script>
   </body>

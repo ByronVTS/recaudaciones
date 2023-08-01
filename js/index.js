@@ -359,23 +359,18 @@ if (!db.objectStoreNames.contains('billetes')) {
 
 var btnDark = document.querySelector("#dark")
 var body = document.querySelector("body")
+var selecTheme = 0
+const btnTheme = document.querySelector("#theme")
 
-load()
+const storedTheme = localStorage.getItem("theme");
+if (storedTheme) {
+  body.classList.add(storedTheme);
+  btnTheme.value = storedTheme;
+}
 
-btnDark.addEventListener("click", e => {
-  body.classList.toggle("darkmode");
-  store(body.classList.contains("darkmode"))
+btnTheme.addEventListener("change", function () {
+  const selectedTheme = btnTheme.value;
+  body.className = selectedTheme;
+  localStorage.setItem("theme", selectedTheme); // Guardar la preferencia en localStorage
+  console.log(selectedTheme);
 });
-
-function load(){
-  const darkmode = localStorage.getItem("darkmode");
-  if(!darkmode){
-    store("false");
-  }else if(darkmode == "true"){
-    body.classList.add("darkmode")
-  }
-}
-
-function store(value){
-  localStorage.setItem("darkmode", value)
-}
